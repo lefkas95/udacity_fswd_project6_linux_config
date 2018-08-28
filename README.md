@@ -3,7 +3,7 @@
 Final project for part 5 of Udacity Fullstack Web Developer Nano Degree.
 
 ## Connecting to the server
-You can reach the web server under the IP address `http://35.177.235.145`.
+You can reach the web server under the IP address http://35.177.235.145.
 
 To connect to the server itself use SSH with the following command: `ssh grader@35.177.235.145 -p 2200 -i 'path/to/attached/key'`
 
@@ -28,7 +28,7 @@ The following configuration was done:
 * updated all packages using `sudo apt-get update` and `sudo apt-get upgrade`
 * Set up firewall `ufw` to default deny any incoming and allow any outgoing, then opened incoming ports 80 (www), 123 (NTP) and 2200 (before configured port for SSH)
 * Write wsgi script to serve the catalog application (include correct path using `sys`)
-* Configure postgresql: Create new user 'catalog' to access data, give this user permission to access and edit the table in the database `catalog`
+* Configure postgresql: Create new user 'catalog' to access data, give this user permission to access and edit the tables in the database `catalog`
 * Configure `wsgi` in file `/etc/apache2/sites-enabled/000-default.conf` by adding `WSGIScriptAlias / /var/www/html/myapp.wsgi` inside the `VirtualHost *:80` tag
 * Restart Apache using `sudo apache2ctl restart`
 
